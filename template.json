@@ -1,0 +1,17 @@
+{
+    "name": null,
+    "input_variables": [
+        "input_length",
+        "paper_input",
+        "select_explanation_type"
+    ],
+    "optional_variables": [],
+    "output_parser": null,
+    "partial_variables": {},
+    "metadata": null,
+    "tags": null,
+    "template": "Please summarise the paper names {paper_input}.\n      Explanation type: {select_explanation_type} the length of response :{input_length}.\n      If explanation type =  mathematical include detailed formulaes and the derivations used in this derivation.\n      If explanation type - Beginner Friendly summarise the paper in a very easy to understand language which can be followed by everyone.",
+    "template_format": "f-string",
+    "validate_template": false,
+    "_type": "prompt"
+}
