@@ -21,6 +21,7 @@ template = PromptTemplate(
       If explanation type =  mathematical include detailed formulaes and the derivations used in this derivation.
       If explanation type - Beginner Friendly summarise the paper in a very easy to understand language which can be followed by everyone.""",
       input_variables=['paper_input', 'select_explanation_type', 'input_length']
+)
 model = ChatGroq(model="openai/gpt-oss-120b", api_key=groq_key, temperature=0.3)
 paper_input = st.text_input("Select Research Paper Name")
 select_explanation_type = st.selectbox("Select the explanation style",["Beginner_Friendly","Technical","Code-Heavy","Mathematical"])
